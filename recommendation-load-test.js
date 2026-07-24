@@ -8,7 +8,7 @@ import { Counter, Trend } from 'k6/metrics';
 // (운영 값을 직접 바꾸지 말 것 — 부하테스트 전용 프로파일/배포에서만 적용)
 
 const BASE_URL = __ENV.BASE_URL || 'https://doro.beam0331.click';
-const TARGET_VU = Number(__ENV.TARGET_VU || 50);
+const TARGET_VU = Number(__ENV.TARGET_VU || 100);
 
 // 팀원 확인(2026-07-24): 운영 RDS의 vehicle_trim_id는 1~203 범위. 필요 시 VEHICLE_TRIM_IDS 환경변수로
 // 콤마 구분 목록을 넘기면 그 값을 우선 사용한다.
